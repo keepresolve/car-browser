@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+	
+		<link rel="stylesheet" type="text/css" href="news_css/news.css"/>
+		<link rel="stylesheet" type="text/css" href="news_css/bootstrap.css"/>
+		<script src="news_js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="news_js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="news_js/nav-menu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="news_js/angular-1.4.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="news_js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="myCtrl">
+		<nav class="navbar navbar-default" role="navigation">
+				<div class=" container">
+					<div class="navbar-header">
+
+						<a class="navbar-brand"><img src="news_img/logo.png"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="http://carsmart.cn/main.html">首&nbsp;&nbsp;页</a>
+							</li>
+							<li class="dropdown" id="nav-cp">
+								<a href="#" class="dropdown-toggle">产&nbsp;&nbsp;品</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><b>个人产品：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="http://autofun.carsmart.cn/" target="_blank">乐乘</a>
+									</li>
+									<li>
+										<a href="http://zc.carsmart.cn/" target="_blank">智乘（即将发布）</a>
+									</li>
+									<li>
+										<a href="http://tripfun.carsmart.cn/" target="_blank">纷乘</a>
+									</li>
+									<!--li><a href='http://ycb.carsmart.cn' target='_blank'>养车宝</a-->
+									<li><b>行业应用：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="http://sc.carsmart.cn/" target="_blank">尚乘</a>
+									</li>
+									<li>
+										<a href="http://4s.carsmart.cn/" target="_blank">车店通</a>
+									</li>
+									<li><b>硬件产品：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="http://autofun.carsmart.cn/" target="_blank">乐乘盒子</a>
+									</li>
+									<li class="menu01">
+										<a href="http://tripfun.carsmart.cn/" target="_blank">纷乘行车记录仪</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">解决方案</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="http://carsmart.cn/solutions.html">行业解决方案</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/compass.html">北斗应用系统</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/city.html">智慧城市建设</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown active">
+								<a href="#" class="dropdown-toggle">新闻中心</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="http://carsmart.cn/news.html">公司动态</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/staff.html">员工天地</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/topic.html">专题报道</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="http://hr.carsmart.cn/" target="_blank">人才招聘</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">关于我们</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="http://carsmart.cn/about.html">公司简介</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/culture.html">企业文化</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/events.html">大事记</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/honour.html">资质&amp;荣誉</a>
+									</li>
+									<li>
+										<a href="http://carsmart.cn/cooperation.html">合作伙伴</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="btn-group pull-right wzdh" id="nav-menu">
+							<a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">网站导航 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="http://carsmart.cn/" target="_blank">车网互联官网</a>
+								</li>
+								<li>
+									<a href="http://autofun.carsmart.cn/" target="_blank">乐乘</a>
+								</li>
+								<li>
+									<a href="http://zc.carsmart.cn/" target="_blank">智乘（即将发布）</a>
+								</li>
+								<li>
+									<a href="http://tripfun.carsmart.cn/" target="_blank">纷乘</a>
+								</li>
+								<!--li><a href='http://ycb.carsmart.cn' target='_blank'>养车宝</a></li-->
+								<li class="menu01">
+									<a href="http://4s.carsmart.cn/" target="_blank">车店通</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			
+			
+			<ng-view></ng-view>
+	</body>
+	<script type="text/javascript">
+		var app=angular.module("myApp",["ngRoute"]);
+		app.config(function($routeProvider) {
+			$routeProvider.when("/aaa", {
+					templateUrl: "gsdt.html"
+				})
+				.when("/bbb", {
+					templateUrl: "ygtd.html"
+				})
+				.when("/ccc", {
+					templateUrl: "ztbd.html"
+				})
+
+				.otherwise("/aaa")
+		})
+
+		app.controller("myCtrl", function($scope) {
+
+		})
+	</script>
+</html>

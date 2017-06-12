@@ -7,13 +7,69 @@
   display: inline-block;
   border-bottom: 2px #97aec0 solid; }
 
-.navbar .active a {
-  border-bottom: 2px #2a5d84 solid; }
-
 .navbar .btn-group {
   margin-top: 20px; }
 
 .navbar-container {
   max-height: 72px; }
+
+.banner {
+  position: relative; }
+  .banner img {
+    width: 100%; }
+  .banner .banner-nav {
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    bottom: 0px;
+    right: 15%;
+    left: 16%;
+    color: #fff; }
+    .banner .banner-nav h1 {
+      color: #fff;
+      font-size: 48px;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+      margin-top: 20px;
+      margin-bottom: 10px; }
+    .banner .banner-nav .nav {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+
+.con {
+  margin-top: 30px;
+  padding-right: 100px; }
+  .con .p {
+    line-height: 24px;
+    font-size: 15px;
+    margin-bottom: 15px; }
+  .con .icon > div {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap; }
+    .con .icon > div h4 {
+      margin-right: 10%;
+      font-weight: bold;
+      font-size: 16px;
+      color: #6d9e1c;
+      line-height: 1.5; }
+
+.con .con2 h4 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #6d9e1c;
+  line-height: 1.5; }
+.con .con2 .p {
+  line-height: 24px;
+  font-size: 15px;
+  margin-bottom: 15px; }
+.con .con2 .img-rounded {
+  border: 1px solid rgba(4, 4, 4, 0.2);
+  border-radius: 5px; }
+.con .con3 h4 {
+  font-weight: bold;
+  font-size: 16px;
+  color: #6d9e1c;
+  line-height: 1.5; }
 
 /*# sourceMappingURL=jjfa.css.map */
