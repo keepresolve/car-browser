@@ -1,0 +1,217 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "PingHei", "Helvetica Neue", "Helvetica", "Arial", "Verdana", "sans-serif", "\5FAE\8F6F\96C5\9ED1";
+}
+
+.bg01 {
+	height: 529px;
+	background-image: url(../lc_img/cf.jpg);
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: center 50%;
+}
+
+.bg01bt {
+	margin-bottom: 6em;
+}
+
+.bg01 p {
+	color: #dfe1e4;
+	padding-left: 2.5em;
+	margin-top: 1em;
+	font-size: 16px;
+	line-height: 2em;
+}
+
+.ju-logo {
+	margin-top: 2em;
+	font-size: 34px;
+}
+
+.btn-pierced {
+	color: white;
+	border: 2px solid white;
+	border-radius: 50px;
+	font-size: 18px;
+	padding: 19px 26px;
+}
+
+.btn-pierced:hover {
+	background: white;
+	color: black;
+}
+
+.ewm-xz {
+	margin-left: 2em;
+}
+
+.lcui {
+	height: 466px;
+	background: url(../lc_img/iphone.png) no-repeat center top;
+	padding: 54px 41.6%;
+	margin: 50px auto;
+}
+
+.item img {
+	width: 100%;
+}
+
+.nav-top {
+	position: absolute;
+	top: 35%;
+}
+
+.jsxwfx {
+	background-color: #f4f5f7;
+	margin: 3em 0;
+	padding: 3em 0;
+	width: 100%;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.media,
+.media .media {
+	margin-top: 0px !important;
+	padding: 10px;
+}
+
+.media-top {
+	margin-top: 3em;
+}
+
+.col-jj {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+.top03 {
+	padding: 4em 0;
+}
+
+.line {
+	background: url(../lc_img/line.gif) top left;
+	min-height: 150px;
+}
+
+.jk01 {
+	background: url(../lc_img/jkicon01.png) left center no-repeat;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 4.5em;
+	margin: 2em auto;
+}
+
+.jk02 {
+	background: url(../lc_img/jkicon02.png) left center no-repeat;
+	padding-top: 1.5em;
+	padding-bottom: 1.5em;
+	padding-left: 4.5em;
+	margin: 2em auto;
+}
+
+.jk03 {
+	background: url(../lc_img/jkicon03.png) left center no-repeat;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 4.5em;
+	margin: 2em auto;
+}
+
+.jk04 {
+	background: url(../lc_img/jkicon04.png) left center no-repeat;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	min-height: 170px;
+}
+
+.jk05 {
+	background: url(../lc_img/jkicon05.png) left center no-repeat;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	padding-left: 4.5em;
+	min-height: 170px;
+}
+
+.tg-01 {
+	background-color: #1b1b1b;
+	margin-top: 4em;
+	padding-top: 4em;
+}
+
+.footer {
+	line-height: 5em;
+	background: #252525;
+}
+
+.footer a {
+	color: white;
+	margin-left: 1em;
+}
+
+.footer-floor {
+	background: #1B1B1B;
+	line-height: 3em;
+}
+/*微博微信*/
+.weibo{
+	position: fixed;
+	bottom:87px;
+	right:10px;
+    width:37px;
+    height:37px;
+    background:url(../lc_img/icon.png) -568px -249px no-repeat;
+    z-index: 999;
+    cursor: pointer;
+}
+.weixin{
+	position: fixed;
+	bottom:51px;
+	right:10px;
+    width:37px;
+    height:37px;
+    background:url(../lc_img/icon.png) -568px -290px no-repeat;
+    z-index: 999;
+    cursor: pointer;
+}
+.weixin>div{
+	display: none;
+    width: 270px;
+    height: 355px;
+    background: url(../lc_img/icon.png) -12px -5px no-repeat;
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    cursor: pointer;
+}
+.weibo>div{
+	display: none;
+    width: 270px;
+    height: 355px;
+    background: url(../lc_img/icon.png) -291px -8px no-repeat;
+    position: fixed;
+    right: 50px;
+    bottom: 36px;
+    cursor: pointer;
+}
+.weibo:hover{
+   background:url(../lc_img/icon.png) -568px -126px no-repeat;
+}
+.weixin:hover{
+  background:url(../lc_img/icon.png) -568px -167px no-repeat;
+}
+.togo{
+	position: fixed;
+	bottom:10px;
+	right:10px;
+    width:37px;
+    height:37px;
+    background:url(../lc_img/icon.png) -568px -331px; no-repeat;
+    z-index: 999;
+    cursor: pointer;
+    display: none;
+}

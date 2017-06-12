@@ -1,0 +1,18 @@
+*{
+	box-sizing:border-box;
+}
+.navbar-nav a{
+	font-size: 16px;
+	color: #2a5d84;
+	display: inline-block;
+	border-bottom: 2px #97aec0 solid;
+}
+// .active {
+// 	border-bottom: 2px #2a5d84 solid;
+// }
+.navbar .btn-group{
+	margin-top:20px;
+}
+.navbar-container{
+	max-height:72px;
+}

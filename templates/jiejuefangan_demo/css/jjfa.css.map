@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EACA,UAAU,EAAC,UAAU;;AAEtB,aAAa;EACZ,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,OAAO;EACd,OAAO,EAAE,YAAY;EACrB,aAAa,EAAE,iBAAiB;;AAEjC,iBAAiB;EAChB,aAAa,EAAE,iBAAiB;;AAEjC,kBAAkB;EACjB,UAAU,EAAC,IAAI;;AAEhB,iBAAiB;EAChB,UAAU,EAAC,IAAI",
+"sources": ["jjfa.scss"],
+"names": [],
+"file": "jjfa.css"
+}
