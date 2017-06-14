@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="hyzx_css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="hyzx_css/new_file.css" />
+		<script src="../../js/jquery.min.js"></script>
+		<title></title>
+	</head>
+
+	<body>
+		<header>
+			<div class="header">
+				<img src="hyzx_img/logo_03.png" width="50%" style="margin-right: 4em;" />
+				<img src="hyzx_img/nav_03.png" width="10%" id="list" />
+			</div>
+		</header>
+		<div class="banner">
+			<img src="hyzx_img/banner_02.png" />
+		</div>
+		<div class="text-center">会员中心</div>
+		<div class="box">
+			<p>临沂市硬笔书法家协会个人会员入会条件细则（试行）</p>
+			<p>根据《临沂市书法家协会章程》规定，为推动硬笔书法事业繁荣发展，结合工作实际，制定个人入会条件细则如下：</p>
+			<p>一、在硬笔书法创作上有较高水平者，应符合下列条件之一：</p>
+			<p>1、由临沂市硬笔书协主办的“届展”入展一次。</p>
+			<p>2、由国家、省硬笔协主办的展览入展、入选者。</p>
+			<p>3、由临沂市硬笔书协举办的临帖班、创作班取得优异成绩者。</p>
+			<p>4、毛笔书法、篆刻、刻字水平达到市书法家协会会员水平者。</p>
+			<p>二、在理论研究上有较高成就者，应符合下列条件之一：</p>
+			<p>1、理论文章在国家、省硬笔协主办的展览入展、入选者。</p>
+			<p>2、在国家级书法、硬笔书法报刊发表有较高学术水平和影响的论文一篇以上，符合学术规范者。</p>
+			<p>三、从事书法教育等有显著成绩或有突出贡献者。</p>
+			<p>1、在大专院校、中小学校和非全日制教育机构从事书法教育工作10年以上。</p>
+			<p>四、个人会员发展工作原则上每年进行一次。凡不符合入会条件细则的，不得上报。</p>
+			<p>五、本细则解释权属临沂市硬笔书法家协会。</p>
+			<p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;临沂市硬笔书法家协会 </p>
+			<p>附件：
+				<a href="#">临沂市硬笔书法家协会入会细则</a>.xls</p>
+
+		</div>
+		<foooter>
+			<div class="footer">
+				<p>版权所有：临沂市硬笔书法协会 联系电话：
+					<a href="tel:13884876279">13884876279</a>
+				</p>
+				<p>联系地址：临沂市兰山区沂州路33-1号 邮编：276000</p>
+				<p>Copyright © 2014 -2018 <span>技术支持：山东临网</span></p>
+
+			</div>
+		</foooter>
+ <div id="menu">
+<div class="list"></div>
+	<ul>
+		<li><a href="../../index.html">首页</a></li>
+		<li><a href="templates/shuxiegaikuang_demo/shuxiegaikuang.html">书协概况</a></li>
+		<li class="menu1">
+		<a href="#">书法论坛</a><span>▲</span>
+        <ul >
+        	<li>书协咨询</li>
+        	<li>书写交流</li>
+        	<li>书写活动</li>
+        	<li>书写公告</li>
+        </ul>
+		</li>
+		<li class="menu1">
+		<a href="#" >书法欣赏</a><span>▲</span>
+		   <ul >
+        	<li>历代名帖</li>
+        	<li>硬笔佳作</li>
+        </ul>
+		</li>
+		<li><a href="../huiyuanfengcai_demo/hyfc_demo.html">会员风采</a></li>
+		<li><a href="../peixunjiaoyu_demo/pxjy_demo.html">培训教育</a></li>
+		<li><a href="../huiyuanzhongxin_demo/hyzx_demo.html">会员中心</a></li>
+		<li><a href="../lianxiwomen_demo/lxwm_demo.html">联系我们</a></li>
+	</ul>
+</div>
+</body>
+<script>
+ $("#menu").height(document.documentElement.scrollHeight)  
+$("#list").click(function(){
+	$("#menu").stop().slideDown(300)
+})
+let flag=1;
+$(".list").click(function(){
+ $("#menu").stop().slideUp(300)
+})
+$("#menu .menu1").click(function(){
+	$(this).find("ul").slideToggle()
+  if(flag==1){
+	$(this).find("span").css({"transform":"rotate(0deg)",color:"rgba(0,0,0,.3)"})
+
+  	flag=0
+  }else{
+  		$(this).find("span").css({"transform":"rotate(180deg)",color:"rgba(0,0,0,1)"})
+  	flag=1
+  }
+})
+</script>
+</html>

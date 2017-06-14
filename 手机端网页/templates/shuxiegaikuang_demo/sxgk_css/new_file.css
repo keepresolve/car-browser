@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+}
+
+.header{
+	text-align: center;
+	height: 70px;
+	padding-top: 20px;
+	background: url(../sxgk_img/header_01.jpg);
+}
+
+.banner{
+	width: 100%;
+}
+.banner>img{
+	width: 100%;
+}
+
+.nav{
+	width: 100%;
+	margin: 2em 0;
+}
+.box{
+	width: 100%;
+	display: flex;
+}
+.box>div{
+	flex: 1;
+	width: 60%;
+	height: 3em;
+	border: 2px solid saddlebrown;
+	background: url(../sxgk_img/fast_nav.jpg);
+	line-height: 3em;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	margin: 3%;
+	color: gray;
+}
+
+
+.news{
+	padding: 1em 0;
+	width: 100%;
+	background: url(../sxgk_img/fast_nav.jpg);
+}
+.news>h3{
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 16px;
+	font-family: "微软雅黑";
+}
+.news>p{
+	line-height: 1.5em;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	text-indent: 2em;
+	letter-spacing: 1.4px;
+}
+.sp1{
+	line-height: 2em;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+.footer{
+	font-size: 8px;
+	text-align: center;
+	background: url(../sxgk_img/fast_nav.jpg);
+	margin-top: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 1em;
+}
+#menu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 999;
+  line-height: 2.4rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); }
+  #menu .list {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    height: 6rem; }
+  #menu > ul {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 6rem;
+    z-index: 999;
+    background-image: url(../sxgk_img/fast_nav.jpg); }
+    #menu > ul a {
+      text-decoration: none;
+      font: 500   .6rem  'Microsoft YaHei';
+      color: black; }
+    #menu > ul > li {
+      width: 30%;
+      position: relative;
+      margin: 0 auto; }
+      #menu > ul > li > ul {
+        padding-top: 1rem;
+        display: none;
+        text-align: right;
+        line-height: 2.4rem;
+        font: 500   .6rem  'Microsoft YaHei'; }
+    #menu > ul .menu1 span {
+      position: absolute;
+      right: -60%;
+      display: inline-block;
+      transform: rotate(180deg); }

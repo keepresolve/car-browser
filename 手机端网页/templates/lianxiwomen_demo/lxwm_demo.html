@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../../js/jquery.min.js"></script>
+		<script src="./lxwm_js/api" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="lxwm_css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="lxwm_css/new_file.css" />
+
+		<title></title>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="header">
+				<img src="lxwm_img/logo_03.png" width="50%" style="margin-right: 4em;" />
+				<img src="lxwm_img/nav_03.png" width="10%" id="list" />
+			</div>
+		</header>
+		<div class="banner">
+			<img src="lxwm_img/banner_02.png" />
+		</div>
+
+		<div style="width: 18%;margin: 2em auto; border-bottom: 2px solid saddlebrown;text-align: center;">联系我们</div>
+
+		<div style="background: url(lxwm_img/fast_nav.jpg);padding: 3%;">
+			<div id="content" class="content">
+				<div style="width:95%;height:35vh;border:0px solid gray" id="container"></div>
+			</div>
+
+			<div class="box">
+				<div class="text-center" style="margin-top: 10%;"><img src="lxwm_img/qr_code_03.jpg" alt="" width="60%" /></div>
+				<div style="margin-top: 10%;">
+					<p>电话：
+						<a href="tel:13884876279">13884876279</a>
+					</p>
+					<p>传真：
+						<a href="javascript:;">0539-8707277</a>
+					</p>
+					<p>Q Q：
+						<a href="javascript:;">562715672</a>
+					</p>
+					<p>邮箱：562715672@qq.com</p>
+				</div>
+			</div>
+		</div>
+
+		<foooter>
+			<div class="footer">
+				<p>版权所有：临沂市硬笔书法协会 联系电话：
+					<a href="tel:13884876279">13884876279</a>
+				</p>
+				<p>联系地址：临沂市兰山区沂州路33-1号 邮编：276000</p>
+				<p>Copyright © 2014 -2018 <span>技术支持：山东临网</span></p>
+
+			</div>
+		</foooter>
+		<div id="menu">
+<div class="list"></div>
+	<ul>
+		<li><a href="../../index.html">首页</a></li>
+		<li><a href="templates/shuxiegaikuang_demo/shuxiegaikuang.html">书协概况</a></li>
+		<li class="menu1">
+		<a href="#">书法论坛</a><span>▲</span>
+        <ul >
+        	<li>书协咨询</li>
+        	<li>书写交流</li>
+        	<li>书写活动</li>
+        	<li>书写公告</li>
+        </ul>
+		</li>
+		<li class="menu1">
+		<a href="#" >书法欣赏</a><span>▲</span>
+		   <ul >
+        	<li>历代名帖</li>
+        	<li>硬笔佳作</li>
+        </ul>
+		</li>
+		<li><a href="../huiyuanfengcai_demo/hyfc_demo.html">会员风采</a></li>
+		<li><a href="../peixunjiaoyu_demo/pxjy_demo.html">培训教育</a></li>
+		<li><a href="../huiyuanzhongxin_demo/hyzx_demo.html">会员中心</a></li>
+		<li><a href="../lianxiwomen_demo/lxwm_demo.html">联系我们</a></li>
+	</ul>
+	</body>
+	<script type="text/javascript">
+		//创建Map实例
+		var map = new BMap.Map("container");
+		var point = new BMap.Point(118.354369, 35.057553);
+		map.centerAndZoom(point, 14);
+		//添加鼠标滚动缩放
+		map.enableScrollWheelZoom();
+
+		//添加缩略图控件
+		map.addControl(new BMap.OverviewMapControl({
+			isOpen: false,
+			anchor: BMAP_ANCHOR_BOTTOM_RIGHT
+		}));
+		//添加缩放平移控件
+		map.addControl(new BMap.NavigationControl());
+		//添加比例尺控件
+		map.addControl(new BMap.ScaleControl());
+		//添加地图类型控件
+		//map.addControl(new BMap.MapTypeControl());
+
+		//设置标注的图标
+		var icon = new BMap.Icon("img/icon.jpg", new BMap.Size(100, 100));
+		//设置标注的经纬度
+		var marker = new BMap.Marker(new BMap.Point(118.056156, 36.840988), {
+			icon: icon
+		});
+		//把标注添加到地图上
+		map.addOverlay(marker);
+		var content = "<table>";
+		content = content + "<tr><td> 编号：001</td></tr>";
+		content = content + "<tr><td> 地点：淄博市张店区</td></tr>";
+		content = content + "<tr><td> 时间：2014-09-26</td></tr>";
+		content += "</table>";
+		var infowindow = new BMap.InfoWindow(content);
+		marker.addEventListener("click", function() {
+			this.openInfoWindow(infowindow);
+		});
+	</script>
+<script>
+// 导航
+ $("#menu").height(document.documentElement.scrollHeight)  
+$("#list").click(function(){
+	$("#menu").stop().slideDown(300)
+})
+let flag=1;
+$(".list").click(function(){
+ $("#menu").stop().slideUp(300)
+})
+$("#menu .menu1").click(function(){
+	$(this).find("ul").slideToggle()
+  if(flag==1){
+	$(this).find("span").css({"transform":"rotate(0deg)",color:"rgba(0,0,0,.3)"})
+
+  	flag=0
+  }else{
+  		$(this).find("span").css({"transform":"rotate(180deg)",color:"rgba(0,0,0,1)"})
+  	flag=1
+  }
+})
+	</script>
+
+</html>
