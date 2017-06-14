@@ -36,7 +36,7 @@
    	  	 	     	</li>
    	  	 	     	<li class="divdier"></li>
    	  	 	     	<li><a href="templates/lecheng_demo/lc_demo.html" target="_blank">乐乘</a></li>
-   	  	 	     	<li><a href="#" target="_blank">智乘(即将发布)</a></li>
+   	  	 	     	<li><a href="templates/zhicheng_demo/zc_demo.html" target="_blank">智乘(即将发布)</a></li>
    	  	 	     	<li><a href="templates/fencheng_demo/fc_demo.html" target="_blank">纷乘</a></li>
    	  	 	     	<li>
    	  	 	     		<b>行业应用:</b>
@@ -47,8 +47,8 @@
    	  	 	     	<li>
    	  	 	     		<b>硬件产品:</b>
    	  	 	     	</li>
-   	  	 	     	<li><a href="">乐乘盒子</a></li>
-   	  	 	     	<li><a href="">纷乘行车记录仪</a></li>
+   	  	 	     	<li><a href="templates/lecheng_demo/lc_demo.html">乐乘盒子</a></li>
+   	  	 	     	<li><a href="templates/fencheng_demo/fc_demo.html">纷乘行车记录仪</a></li>
    	  	 	     </ul>
    	  	 	 </li>
    	  	 	<li class="">
@@ -60,22 +60,22 @@
    	  	 	     </ul>
    	  	 	</li>
    	  	 	<li class="dropdown">
-   	  	 	    <a href="">新闻中心</a>
+   	  	 	    <a href="#">新闻中心</a>
    	  	 	    <ul class="dropdown-menu">
-   	  	 	    	<li><a href="">公司动态</a></li>
-   	  	 	    	<li><a href="">员工天地</a></li>
-   	  	 	    	<li><a href="">专题报道</a></li>
+   	  	 	    	<li><a href="templates/news_demo/news_demo.html">公司动态</a></li>
+   	  	 	    	<li><a href="templates/news_demo/news_demo.html#/bbb">员工天地</a></li>
+   	  	 	    	<li><a href="templates/news_demo/news_demo.html#/ccc">专题报道</a></li>
    	  	 	    </ul>
    	  	 	</li>
-   	  	 	<li class=""><a href="">人才招聘</a></li>
+   	  	 	<li class=""><a href="templates/rencaizhaopin_demo/rczp_demo.html">人才招聘</a></li>
    	  	 	<li class="">
-   	  	 	    <a href="">关于我们</a>
+   	  	 	    <a href="#">关于我们</a>
    	  	 	  	    <ul class="dropdown-menu">
-   	  	 	    	<li><a href="">公司简介</a></li>
-   	  	 	    	<li><a href="">企业文化</a></li>
-   	  	 	    	<li><a href="">大事记</a></li>
-   	  	 	    	<li><a href="">资质&amp;荣誉</a></li>
-   	  	 	    	<li><a href="">合作伙伴</a></li>
+   	  	 	    	<li><a href="templates/guanyuwomen_demo/gsjj.html">公司简介</a></li>
+   	  	 	    	<li><a href="templates/guanyuwomen_demo/gsjj.html#/bbb">企业文化</a></li>
+   	  	 	    	<li><a href="templates/guanyuwomen_demo/gsjj.html#/ccc">大事记</a></li>
+   	  	 	    	<li><a href="templates/guanyuwomen_demo/gsjj.html#/ddd">资质&amp;荣誉</a></li>
+   	  	 	    	<li><a href="templates/guanyuwomen_demo/gsjj.html#/eee">合作伙伴</a></li>
    	  	 	    </ul>
    	  	 	</li>
    	  	 </ul>
@@ -83,10 +83,10 @@
    	  	 	<a href="" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">网站导航<span class="caret"></span></a>
    	  	 	<ul class="dropdown-menu">
    	  	 		<li><a href="#">车网互联官网</a></li>
-   	  	 		<li><a href="#">车乘</a></li>
-   	  	 		<li><a href="#">智乘(即将发布)</a></li>
-   	  	 		<li><a href="#">纷乘</a></li>
-   	  	 		<li><a href="#">车店通</a></li>
+   	  	 		<li><a href="templates/lecheng_demo/lc_demo.html">乐乘</a></li>
+   	  	 		<li><a href="templates/zhicheng_demo/zc_demo.html">智乘(即将发布)</a></li>
+   	  	 		<li><a href="templates/fencheng_demo/fc_demo.html">纷乘</a></li>
+   	  	 		<li><a href="templates/chediantong_demo/cdt_demo.html">车店通</a></li>
    	  	 	</ul>
    	  	 </div>
    	  </div>
@@ -249,7 +249,7 @@ $(window).on("scroll",function(){
 })
  var timer=null
    $(".togo").on("click",function(){
-    var speed=0
+    var speed=10
     clearInterval(timer)
    timer=setInterval(function(){
     var top=$(window).scrollTop()

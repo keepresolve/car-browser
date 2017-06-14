@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="gywm_css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="gywm_css/helper.css"/>
+		<link rel="stylesheet" type="text/css" href="gywm_css/pe-icon-7-stroke.css"/>
+		<script src="gywm_js/angular-1.4.6.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="gywm_js/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="myCtrl">
+		<nav class="navbar navbar-default" role="navigation">
+				<div class=" container">
+					<div class="navbar-header">
+
+						<a class="navbar-brand"><img src="gywm_img/logo.png"/></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="../../index.html">首&nbsp;&nbsp;页</a>
+							</li>
+							<li class="dropdown" id="nav-cp">
+								<a href="#" class="dropdown-toggle">产&nbsp;&nbsp;品</a>
+								<ul class="dropdown-menu" role="menu">
+									<li><b>个人产品：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="../lecheng_demo/lc_demo.html">乐乘</a>
+									</li>
+									<li>
+										<a href="../zhicheng_demo/zc_demo.html">智乘（即将发布）</a>
+									</li>
+									<li>
+										<a href="../fencheng_demo/fc_demo.html">纷乘</a>
+									</li>
+									<!--li><a href='http://ycb.carsmart.cn' target='_blank'>养车宝</a-->
+									<li><b>行业应用：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="../shangchen_demo/sc_demo.html">尚乘</a>
+									</li>
+									<li>
+										<a href="../chediantong_demo/cdt_demo.html">车店通</a>
+									</li>
+									<li><b>硬件产品：</b></li>
+									<li class="divider"></li>
+									<li>
+										<a href="../lecheng_demo/index.html">乐乘盒子</a>
+									</li>
+									<li class="menu01">
+										<a href="../fencheng_demo/fc_demo.html">纷乘行车记录仪</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">解决方案</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="../jiejuefangan_demo/jjfa.html">行业解决方案</a>
+									</li>
+									<li>
+										<a href="#application">北斗应用系统</a>
+									</li>
+									<li>
+										<a href="#city">智慧城市建设</a>
+									</li>
+								</ul>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle">新闻中心</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="../news_demo/news_demo.html">公司动态</a>
+									</li>
+									<li>
+										<a href="../news_demo/news_demo.html#bbb">员工天地</a>
+									</li>
+									<li>
+										<a href="../news_demo/news_demo.html#ccc">专题报道</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="../rencaizhaopin_demo/rczp_demo.html" target="_blank">人才招聘</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle active">关于我们</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="#/aaa">公司简介</a>
+									</li>
+									<li>
+										<a href="#/bbb">企业文化</a>
+									</li>
+									<li>
+										<a href="#/ccc">大事记</a>
+									</li>
+									<li>
+										<a href="#/ddd">资质&amp;荣誉</a>
+									</li>
+									<li>
+										<a href="#/eee">合作伙伴</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<div class="btn-group pull-right wzdh" id="nav-menu">
+							<a class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown">网站导航 <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="../../index.html">车网互联官网</a>
+								</li>
+								<li>
+									<a href="../lecheng_demo/index.html">乐乘</a>
+								</li>
+								<li>
+									<a href="../zhicheng_demo/zc_demo.html">智乘（即将发布）</a>
+								</li>
+								<li>
+									<a href="../fencheng_demo/fc_demo.html">纷乘</a>
+								</li>
+								<!--li><a href='http://ycb.carsmart.cn' target='_blank'>养车宝</a></li-->
+								<li class="menu01">
+									<a href="../chediantong_demo/cdt_demo.html">车店通</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		
+		<ng-view></ng-view>
+		
+		<footer class="footer">
+			<div class="container text-center">
+
+				<div class="col-lg-6">北京车网互联科技有限公司广州分公司 版权所有
+					<a href="#" target="_blank">粤ICP备14046473号</a>
+				</div>
+				<div class="col-lg-6">
+					<a href="#">关于我们</a>
+					<a href="#">联系我们</a>
+					<a href="#">招商合作</a>
+					<a href="#">法律声明</a>
+					<a href="#">官方微博</a>
+				</div>
+			</div>
+		</footer>
+		<footer class="footer-floor">
+			<div class="container text-center">
+				<p>Copyright © 2014 Beijing Carsmart Technology Co., Ltd. </p>
+			</div>
+		</footer>
+	</body>
+	<script type="text/javascript">
+		var app = angular.module("myApp",["ngRoute"])
+		app.config(function($routeProvider){
+			$routeProvider.when("/aaa",{
+				templateUrl:"gsjj.html"
+			})
+			.when("/bbb",{
+				templateUrl:"qywh.html"
+			})
+			.when("/ccc",{
+				templateUrl:"dsj.html"
+			})
+			.when("/ddd",{
+				templateUrl:"zzry.html"
+			})
+			.when("/eee",{
+				templateUrl:"hzhb.html"
+			})
+			.otherwise("/aaa")
+		})
+		
+		
+		app.controller("myCtrl",function($scope){
+			
+		})
+	</script>
+</html>
