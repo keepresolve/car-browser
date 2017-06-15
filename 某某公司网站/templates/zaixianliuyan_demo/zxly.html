@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="../../css/index.css">
+	<link rel="stylesheet" href="zxly.css">
+	<script src="../../js/TouchSlide.1.1.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<link rel="icon" href="">
+</head>
+<body>
+	<div class="box">
+		<header>
+			<div>我是logo</div>
+		    <div >
+		    	<div class="search">
+		    	  <a href="#" ></a></div>
+		    	<div class="list">
+		    	  <a href="#"></a>
+		    	</div>
+		    </div>
+		</header>
+	 <div class="search-in-box">
+		    		<input type="text">
+		    		<a href="#">搜索</a>
+	</div>
+      <div class="list-in-box">
+			<ul>
+				<li><a href="../../index.html">网站首页</a></li>
+				<li><a href="../gongsijianjie_demo/gsjj.html">公司简介</a></li>
+				<li><a href="../xinwenzhongxin_demo/xwzx.html">新闻中心</a></li>
+				<li><a href="../chanpinzhanshi_demo/cpzs.html">产品展示</a></li>
+				<li><a href="../gongsixiangce_demo/gsxc.html">公司相册</a></li>
+				<li><a href="../zaixianliuyan_demo/zxly.html">在线留言</a></li>
+				<li><a href="../lianxiwomen_demo/lxwm.html">联系我们</a></li>
+			</ul>
+		</div>
+	</div>
+ <div id="focus">
+ 	
+  <div class="bd">
+  	 <div class="wrap">
+  	 	<ul>
+  	 		<li><a href=""><img src="../../img/banner5.jpg" alt=""></a></li><li>
+  	 		<a href=""><img src="../../img/banner3.jpg" alt=""></a></li><li>
+  	 		<a href=""><img src="../../img/banner2.jpg" alt=""></a></li><li>
+  	 		<a href=""><img src="../../img/banner2.jpg" alt=""></a></li>
+  	 	</ul>
+  	   <div class="hd">
+ 		  <ul></ul>
+ 	   </div>
+   </div>
+  </div>
+ </div>
+  <div class="con">
+	<div class="con3">
+		 <div class="title">
+			   <h3><span>在线留言</span><span>Messages</span></h3>
+	     </div>
+	     <form action="">
+	        <div>
+	        	<label for="">
+	        		<span>姓名:</span><input type="text">
+	        	</label>
+	        </div>
+	         <div>
+	        	<label for="">
+	        		<span>电话:</span><input type="text">
+	        	</label>
+	        </div>
+	          <div>
+	        	<label for="">
+	        		<span>邮箱:</span><input type="text">
+	        	</label>
+	        </div>
+	         <div>
+	        	<label for="">
+	        		<span>留言:</span><textarea name="" id="" cols="30" rows="10"></textarea>
+	        	</label>
+	        </div>
+	         <div>
+	        	<label for="" class='code'>
+	        		<span>验证码:</span><input type="text"><img src="../../img/yanzhengma.jpg" class="yan_img1"><a href="#">换一张</a>
+	        	</label>
+	        </div>
+	        <p id="submit"><input type="submit" value="提交"></p>
+	     </form>
+       
+	   
+</div>
+</div>
+<footer>
+   <ul class="foot_nav">
+		    <li>友情链接：</li>
+			<li><a href="#">临网汇商</a></li>
+			<li>|</li>
+			<li><a href="#">临网CMS</a></li>
+			<li>|</li>
+			<li><a href="#" class="none">山东临网</a></li>
+
+   </ul>
+   <p class="p1">xxxxxxxxxxx版权所有</p>
+   <p>联系地址：山东省临沂市XXXXXXXXXXXXXXXX</p>
+   <p>电话：13853945671</p>
+   <p class="p2">Copyright © 2014-2017 山东临网 版权所有 Power by 山东临网</p>
+</footer>
+</body>
+<script >
+// 轮播
+	  TouchSlide({
+	slideCell: "#focus",
+		titCell: ".hd ul", //开启自动分页
+		 autoPage: true ,
+		 // 此时设置 titCell 为导航元素包裹层
+		mainCell: ".bd ul", 
+		effect: "leftLoop", 
+		autoPlay: true,//自动播放
+		// autoPage: true, //自动分页
+		titOnClassName:"on",
+		// switchLoad: "_src" //切换加载，真实图片路径为"_src";
+}); 
+	    // 导航
+  var num=0
+  $(".box .list").click(function(){
+  	 if(num==0){
+  	 	$(".list-in-box").css("-webkit-transform","rotateY("+num+"deg)")
+  	 	num=90
+  	 }else{
+  	 	$(".list-in-box").css("-webkit-transform","rotateY("+num+"deg)")
+  	 	num=0
+  	 }
+  		
+  })
+  $(".box .search").click(function(){
+  	$(".search-in-box").slideToggle()
+  })
+ 
+  // 轮播
+   TouchSlide({
+  	slideCell:"#focu2",
+  	titCell:".hd ul",
+  	autoPage:true,
+  	mainCell:".wrap ul",
+  	effect:"leftLoop",
+  	// autoPlay:true,
+  	titOnClassName:"one"
+  })
+  $("#focu2 .hd ul>li").eq(0).addClass("one")
+</script>
+</html>

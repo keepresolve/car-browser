@@ -1,0 +1,67 @@
+.con .con3 form{
+     padding:2% 5%;
+}
+form>label{
+	width:100%;
+	display:block;
+}
+form>div>label{
+    display: flex;
+    width:100%;
+}
+form>div>label>span{
+	float: left;
+    font-size:1.4rem;
+    width: 15%;
+    text-align: right;
+}
+
+form>div>label>input{
+	width: 80%;
+    margin-left: 1rem;
+    height: 2rem;
+    border-color: #ccc;
+    border-style: solid;
+    margin-top: .5rem;
+}
+label>textarea{
+    width: 80%;
+    margin-left: 1rem;
+    border-color: #ccc;
+    border-style: solid;
+    margin-top:.5rem;
+}
+.code{
+	align-items:center;
+}
+.code input{
+    width:50%;
+}
+.code img{
+	width:20%;
+	height:100%;
+	margin:0 2%;
+}
+.code a{
+	width: 15%;
+	text-align: center;
+	display: inline-block;
+	 font-size: 1.4rem;
+	 line-height:2rem;
+	 text-decoration:none;
+	 color:black;
+}
+form p{
+	margin-top:1rem;
+	text-align: center;
+}
+form input[type=submit]{
+	 background-color: #F1B900;
+    color: #fff;
+    padding:.5rem 2.4rem;
+    font-size:1.4rem;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+
+}

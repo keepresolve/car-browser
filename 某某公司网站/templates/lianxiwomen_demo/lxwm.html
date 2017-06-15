@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/api" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+
+	<body>
+
+		
+		<div class="bo-x">
+			<header>
+				<div>我是logo</div>
+				<div>
+					<div class="search">
+						<a href="javascript:;"></a>
+					</div>
+					<div class="list">
+						<a href="javascript:;"></a>
+					</div>
+				</div>
+			</header>
+			<div class="search-in-box">
+				<input type="text">
+				<a href="#">搜索</a>
+			</div>
+			<div class="list-in-box">
+				<ul>
+				<li><a href="../../index.html">网站首页</a></li>
+				<li><a href="../gongsijianjie_demo/gsjj.html">公司简介</a></li>
+				<li><a href="../xinwenzhongxin_demo/xwzx.html">新闻中心</a></li>
+				<li><a href="../chanpinzhanshi_demo/cpzs.html">产品展示</a></li>
+				<li><a href="../gongsixiangce_demo/gsxc.html">公司相册</a></li>
+				<li><a href="../zaixianliuyan_demo/zxly.html">在线留言</a></li>
+				<li><a href="../lianxiwomen_demo/lxwm.html">联系我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="focus">
+
+			<div class="bd">
+				<div class="wrap">
+					<ul>
+						<li>
+							<a href=""><img src="img/banner5.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner3.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner2.jpg" alt=""></a>
+						</li>
+						<li>
+							<a href=""><img src="img/banner2.jpg" alt=""></a>
+						</li>
+					</ul>
+					<div class="hd">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="wenzi">
+			联系我们
+			<span>Contact</span>
+		</div>
+		
+		<div class="box">
+			<h6>山东某某有限公司</h6>
+			<p>电话：0539-8800978</p>
+		<p>Q Q：2254898878</p>
+		<p>微信：sdlwkj</p>
+		<p>地址：临沂市经济开发区中印软件产业园（临沂云计算中心）</p>
+
+		</div>
+		
+			<div id="content" class="content">
+				<div style="width:90%;height:40vh;border:0px solid gray;margin: 2em auto;" id="container"></div>
+			</div>
+
+			
+		
+		
+		<footer>
+			<div class="foot">
+				<ul class="foot_nav">
+					<li>友情链接：</li>
+					<li>
+						<a href="#">临网汇商&nbsp;&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="#">临网CMS&nbsp;&nbsp;&nbsp;|</a>
+					</li>
+					<li>
+						<a href="#" class="none">山东临网</a>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<p class="p1">xxxxxxxxxxx版权所有</p>
+				<p>联系地址：山东省临沂市XXXXXXXXXXXXXXXX </p>
+				<p>电话：13853945671</p>
+				<p class="p2">Copyright © 2014-2017 山东临网 版权所有 Power by 山东临网</p>
+			</div>
+		</footer>
+
+		
+	</body>
+	<script type="text/javascript">
+		//创建Map实例
+		var map = new BMap.Map("container");
+		var point = new BMap.Point(118.354369, 35.057553);
+		map.centerAndZoom(point, 14);
+		//添加鼠标滚动缩放
+		map.enableScrollWheelZoom();
+
+		//添加缩略图控件
+		map.addControl(new BMap.OverviewMapControl({
+			isOpen: false,
+			anchor: BMAP_ANCHOR_BOTTOM_RIGHT
+		}));
+		//添加缩放平移控件
+		map.addControl(new BMap.NavigationControl());
+		//添加比例尺控件
+		map.addControl(new BMap.ScaleControl());
+		//添加地图类型控件
+		//map.addControl(new BMap.MapTypeControl());
+
+		//设置标注的图标
+		var icon = new BMap.Icon("img/icon.jpg", new BMap.Size(100, 100));
+		//设置标注的经纬度
+		var marker = new BMap.Marker(new BMap.Point(118.056156, 36.840988), {
+			icon: icon
+		});
+		//把标注添加到地图上
+		map.addOverlay(marker);
+		var content = "<table>";
+		content = content + "<tr><td> 编号：001</td></tr>";
+		content = content + "<tr><td> 地点：淄博市张店区</td></tr>";
+		content = content + "<tr><td> 时间：2014-09-26</td></tr>";
+		content += "</table>";
+		var infowindow = new BMap.InfoWindow(content);
+		marker.addEventListener("click", function() {
+			this.openInfoWindow(infowindow);
+		});
+		
+		
+		
+					// 轮播banner
+  TouchSlide({
+	slideCell: "#focus",
+		titCell: ".hd ul", //开启自动分页
+		 autoPage: true ,
+		 // 此时设置 titCell 为导航元素包裹层
+		mainCell: ".bd ul", 
+		effect: "leftLoop", 
+		autoPlay: true,//自动播放
+		// autoPage: true, //自动分页
+		titOnClassName:"on",
+		// switchLoad: "_src" //切换加载，真实图片路径为"_src";
+}); 
+  $(".con .con2 .content button").click(function(){
+  	    $(this).css("background","#006599").siblings().css(    "background-color"," #F1B900")
+  })
+  TouchSlide({
+  	slideCell:"#focu2",
+  	titCell:".hd ul",
+  	autoPage:true,
+  	mainCell:".wrap ul",
+  	effect:"leftLoop",
+  	autoPlay:true,
+  	titOnClassName:"one"
+  })
+  $("#focu2 .hd ul>li").eq(0).addClass("one")
+
+  // 切换
+  $(".con2 .content button").click(function(){
+  	$(".con2 .content>li").find("ul").hide()
+  	  $(".con2 .content>li").find("ul").eq($(this).index()).show()
+
+  })
+  // 导航
+  var num=0
+  $(".bo-x .list").click(function(){
+  	 if(num==0){
+  	 	$(".list-in-box").css("-webkit-transform","rotateY("+num+"deg)")
+  	 	num=90
+  	 }else{
+  	 	$(".list-in-box").css("-webkit-transform","rotateY("+num+"deg)")
+  	 	num=0
+  	 }
+  		
+  })
+  $(".bo-x .search").click(function(){
+  	$(".search-in-box").slideToggle()
+  })
+	</script>
+
+</html>

@@ -1,0 +1,192 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.bo-x {
+	position: relative;
+	z-index: 999;
+	-webkit-perspective: 5000px;
+
+}
+
+.bo-x .list-in-box {
+	position: absolute;
+	width: 100%;
+	background: #0067d2;
+	z-index: 999;
+	text-align: center;
+	line-height: 2.2rem;
+	-webkit-transform-origin: bottom;
+	-webkit-transform: rotateY(90deg);
+	-webkit-transition: all 1s;
+}
+
+.bo-x .list-in-box a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.bo-x .list-in-box ul>li {
+	border-top: 1px solid #0576ec;
+	border-bottom: 1px solid #0053aa;
+}
+
+.bo-x .search-in-box {
+	position: absolute;
+	position: relative;
+	display: none;
+	height: 2rem;
+	width: 100%;
+	z-index: 999;
+	box-sizing: border-box;
+}
+
+.bo-x .search-in-box input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	padding: 0px 2rem;
+}
+
+.bo-x .search-in-box a {
+	display: inline-block;
+	position: absolute;
+	bottom: 0px;
+	right: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.3);
+}
+
+.bo-x header {
+	display: flex;
+	z-index: 999;
+	background: #0067d2;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+.bo-x header .search {
+	display: inline-block;
+	width: 2rem;
+	margin:.5rem;
+	/*padding: .5rem;*/
+}
+
+.bo-x header .search a {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background: url(../img/icon-search.png) no-repeat center center;
+	background-size: 100%;
+}
+
+.bo-x header .search:hover {
+	background: lightblue;
+}
+
+.bo-x header .list {
+	margin:.5rem;
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	/*padding: .5rem;*/
+}
+
+.bo-x header .list a {
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	background: url(../img/menu-button-bg.png) no-repeat 0 center;
+	background-size: 100%;
+}
+
+.on {
+	background: #fff;
+}
+
+#focus img {
+	width: 100%;
+}
+
+#focus .wrap {
+	position: relative;
+}
+
+#focus .hd {
+	position: absolute;
+	bottom: 5px;
+	width: 100%;
+}
+
+#focus .hd ul {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+#focus .hd ul li {
+	margin: 0px .5rem;
+	height: .5rem;
+	width: .5rem;
+	color: transparent;
+	border: 2px solid #fff;
+	border-radius: 50%;
+}
+
+.wenzi {
+	width: 90%;
+	height: 1.5em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	padding: 0 1%;
+	margin: 2% 2%;
+	border-left: 4px solid blue;
+}
+
+
+
+
+.wenzi>span {
+	font-size: 16px;
+	color: gray;
+}
+
+.box{
+	width: 90%;
+	margin: 0 auto;
+}
+.box>p{
+	font-size: 10px;
+}
+
+
+
+
+
+.foot {
+	text-align: center;
+	/*overflow: auto;*/
+	background: steelblue;
+	color: white;
+}
+
+ul {
+	list-style: none;
+}
+
+.foot ul>li {
+	float: left;
+	margin-left: 5%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.foot>p {
+	font-size: 12px;
+}
